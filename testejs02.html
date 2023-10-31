@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html lang="pt-br">
+    <head>
+        <title>Teste JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function acendeLampada(){
+                 document.getElementById("luz").src="_imagens/lampada-acesa.jpg";
+            }
+            
+            function apagaLampada() {
+                document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+            }
+            
+            function quebraLampada() {
+                document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>Acenda a lâmpada</h1>
+            <img src="_imagens/lampada-apagada.jpg" id="luz" alt="alt" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/>
+        </div>
+    </body>
+</html>
